@@ -10,11 +10,17 @@ import { SanPhamService } from './services/san-pham.service';
 import { NavComponent } from './nav/nav.component';
 import { CategoryComponent } from './category/category.component';
 import { SlideComponent } from './slide/slide.component';
+import { ThoiTrangNamComponent } from './thoi-trang-nam/thoi-trang-nam.component';
+import { GiayDepComponent } from './giay-dep/giay-dep.component';
+import { PhuKienComponent } from './phu-kien/phu-kien.component';
+import { HomeComponent } from './home/home.component';
+import { QuanLySanPhamComponent } from './quan-ly-san-pham/quan-ly-san-pham.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, AddSanPhamComponent, ChiTietSanPhamComponent, NavComponent, CategoryComponent, SlideComponent ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
+  declarations: [ AppComponent, HelloComponent, AddSanPhamComponent, ChiTietSanPhamComponent, NavComponent, CategoryComponent, SlideComponent, ThoiTrangNamComponent, GiayDepComponent, PhuKienComponent, HomeComponent, QuanLySanPhamComponent ],
   bootstrap:    [ AppComponent ],
   providers: [SanPhamService],
 })
