@@ -3,64 +3,51 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <title>Shop Homepage - Start Bootstrap Template</title>
+	<title>Shop Homepage - Start Bootstrap Template</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/shop-homepage.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/shop-homepage.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <app-nav></app-nav>
-  </nav>
+	<app-home></app-home>
+	<!-- Page Content -->
+	<div class="container">
 
-  <!-- Page Content -->
-  <div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<app-category></app-category>
+			</div>
+      
+			<div class="col-lg-9">
+				<router-outlet></router-outlet>
+			</div>
 
-    <div class="row">
+		</div>
+	</div>
 
 
-      <div class="col-lg-3">
-        <app-category></app-category>
-      </div>
-      <!-- /.col-lg-3 -->
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<p class="m-0 text-center text-white">Gideon</p>
+		</div>
+		<!-- /.container -->
+	</footer>
 
-      <div class="col-lg-9">
-        <!-- Ảnh -->
-         <router-outlet></router-outlet>
-        
-
-      </div>
-      <!-- /.col-lg-9 -->
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p class="m-0 text-center text-white">Gideon</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

@@ -16,11 +16,12 @@ import { PhuKienComponent } from './phu-kien/phu-kien.component';
 import { HomeComponent } from './home/home.component';
 import { QuanLySanPhamComponent } from './quan-ly-san-pham/quan-ly-san-pham.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DangnhapComponent } from './dangnhap/dangnhap.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, AddSanPhamComponent, ChiTietSanPhamComponent, NavComponent, CategoryComponent, SlideComponent, ThoiTrangNamComponent, GiayDepComponent, PhuKienComponent, HomeComponent, QuanLySanPhamComponent ],
+  declarations: [ AppComponent, HelloComponent, AddSanPhamComponent, ChiTietSanPhamComponent, NavComponent, CategoryComponent, SlideComponent, ThoiTrangNamComponent, GiayDepComponent, PhuKienComponent, HomeComponent, QuanLySanPhamComponent, DangnhapComponent ],
   bootstrap:    [ AppComponent ],
   providers: [SanPhamService],
 })
